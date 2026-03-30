@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+num 1<input type="text"id="num1"><br><br>
+num 2<input type="text"id="num2"><br><br>
+<input type="button" value="add" onclick="sum()"><br><br>
+<input type="button" value="subract" onclick="sub()"><br><br>
+<input type="button" value="multiple" onclick="mul()"><br><br>
+<input type="button" value="division" onclick="div()">
+<p id="res"></p>
+<script>
+    function sum(){
+        var a= document.getElementById("num1").value;
+        var b=document.getElementById("num2").value;
+        document.getElementById("res").innerHTML=parseInt(a)+parseInt(b);
+    
+
+    }
+    function sub(){
+        var a= document.getElementById("num1").value;
+        var b=document.getElementById("num2").value;
+        document.getElementById("res").innerHTML=parseInt(a)-parseInt(b);
+    
+
+    }
+    function mul(){
+        var a= document.getElementById("num1").value;
+        var b=document.getElementById("num2").value;
+        document.getElementById("res").innerHTML=parseInt(a)*parseInt(b);
+    
+
+    }
+    function div(){
+        var a= document.getElementById("num1").value;
+        var b=document.getElementById("num2").value;
+        document.getElementById("res").innerHTML=parseInt(a)/parseInt(b);
+    
+
+    }
+
+   
+
+</script>
+
+</body>   
+</html>
